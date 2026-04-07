@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-text-primary: #072ac8;
+  --color-text: #6b708d;
+  --color-text-dark: #292e47;
+  --color-text-white: #ffffff;
+  --color-text-neutral-light: #f4f6fc;
+  --color-text-secondary: #ffc600;
+  --color-text-primary-hover: #a2d6f9;
+  --color-text-black: #000000;
+  --color-bg: #f2f4fc;
+  --font-body: Roboto, sans-serif;
+  --space-s: 1rem;
+  --space-m: 2rem;
+  --space-normal: 2.5rem;
+  --space-l: 3rem;
+  --space-xl: 6rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  margin: var(--space-l);
+ 
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+header {
+  
+  margin: var(--space-m);
+  margin-top: -2rem;
+}
+
+nav {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-l);
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-l);
+   margin: var(--space-m);
+}
+
+nav ul li {
+    color: var(--color-text-primary)
+    
+}
+
+nav ul li a {
+    color: var(--color-text);
+   
+}
+
+nav ul li a:hover {
+    color: var(--color-text-primary);
+}
+
+.pseudo-button {
+ background-color: var(--color-text-primary);
+  color: var(--color-text-white);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+}
+
+#hero {
+  padding: var(--space-l) var(--space-s);
+  display: flex;
+  align-items: center;
+   padding: var(--space-m);
+  gap: var(--space-l);
+
+}
+
+.hero-content,
+.hero-group-image {
+  flex: 1;
+  
+}
+
+.hero-group-image {
+    position: relative;
+    align-items: center;
+}
+
+.card-image, 
+.project-accepted {
+    position: absolute;
+    height: 60%;
+
+}
+
+.card-image {
+    bottom: 40%;
+    left: -15%;
+}
+
+.project-accepted {
+    top: 60%;   
+    right: 15%;
+}
+
+.hero-content{
+    margin-right: var(--space-s);
+}
+
+.hero-content h1 {
+  font-size: var(--space-l);
+  line-height: 1.2;
+  color: var(--color-text-dark);
+  font-weight: 700;
+  
+}
+
+
+.hero-content a {
+ color: var(--color-text)
+ 
+}
+
+.hero-content p{
+    padding: 2rem 0;
+    margin-right: 5rem;
+    font-size: 1.2rem;
+}
+
+
+.hero-img {
+  object-fit:cover;
+  max-width: 70%;
+
+}
+
+
+
+#logos {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--space-xl)
+}
+
+#logos img {
+  filter: grayscale(1);
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  height: 80%;
+}
+
+#logos img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+#recent-projects {
+  margin: var(--space-m);
+    display: flexbox;
+    	flex-flow: row wrap;
+}
+
+.cards {
+	display: flex;
+	width: 100%;
+	padding: 0.5em;
+     justify-content: center;
+}
+.card-content{
+    flex: 1;
+   
+}
+  
+
+#recent-projects h3 {
+    font-weight: 700;
+    font-size: var(--space-normal);
+    color: var(--color-text-dark)
+}
+
+.recent-projects-group {
+  align-self: flex-start;
+  justify-content: space-between;
+}
+
+#testimonial-section {
+background-color: var(--color-text-dark);
+}
+
+.testimonial-img {
+    position: relative;
+    
+}
+
+.testimonial-group h3{
+    color:var(--color-text-neutral-light)
+}
+
+.testimonial-group p {
+    color:var(--color-text-secondary)
+}
+
+emoji-left-top,
+emoji-right-top,
+emoji-left-down,
+emoji-right-down {
+    position: absolute;
+    
+}
+
+emoji-right-top {
+      top: 60%;   
+    right: 15%;
+}
+
+
+footer {
+  display: flexbox;
+  margin: var(--space-l);
+}

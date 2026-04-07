@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="script.js" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header>
@@ -17,23 +17,41 @@
           <li><a href="#recent-projects">Projects</a></li>
           <li><a href="#services-section">Services</a></li>
         </ul>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html" class="pseudo-button">Contact Us</a>
       </nav>
     </header>
     <main>
       <section id="hero">
-        <h1>Empower Your Business With Stunning Design!</h1>
-        <p>
-          Circle is a digital design and development studio. We design and
-          develop astonishing websites and mobile apps.
-        </p>
-        <a href="contact.html">Get in touch</a>
-        <a href="projects/1.html">See our work</a>
-
-        <img
-          src="project-assets/hero-section/hero-image.png"
-          alt="Hero image"
-        />
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Empower Your Business With Stunning Design!</h1>
+            <p>
+              Circle is a digital design and development studio. We design and
+              develop astonishing websites and mobile apps.
+            </p>
+          </div>
+          <div class="hero-btn">
+            <a class="pseudo-button" href="#newsletter-section">Get in touch</a>
+            <a href="#recent-projects">See our work</a>
+          </div>
+        </div>
+        <div class="hero-group-image">
+          <img
+            class="card-image"
+            src="project-assets/hero-section/card-1.png"
+            alt="Card image"
+          />
+          <img
+            class="hero-img"
+            src="project-assets/hero-section/hero-image.png"
+            alt="Hero image"
+          />
+          <img
+            class="project-accepted"
+            src="project-assets/hero-section/card-2.png"
+            alt="Project accepted"
+          />
+        </div>
       </section>
       <section id="logos">
         <a href="https://www.airbnb.es/"
@@ -55,37 +73,81 @@
         /></a>
       </section>
       <section id="recent-projects">
-        <h2>Recent Projects</h2>
-        <div class="recent-projects-group">
-          <div class="recent-project-card">
-            <h3></h3>
-            <p></p>
-            <p>Learn more</p>
+        <h3>Recent Projects</h3>
+        <article class="cards">
+          <img
+            src="/project-assets/projects-section/1.jpg*"
+            alt="Image Project"
+            class="card-image"
+          />
+          <div class="card-content">
+            <h3 class="card_tittle">Simplify</h3>
+            <p>UI Design & App Development</p>
+            <a href="projects/1.html">Learn more</a>
           </div>
-          <div class="recent-project-card">
-            <h3></h3>
-            <p></p>
-            <p>Learn more</p>
+        </article>
+        <article class="card">
+          <img
+            src="/project-assets/projects-section/2.jpg*"
+            alt="Image Project"
+            class="card-image"
+          />
+          <div class="card-content">
+            <h3 class="card_tittle">Dashcoin</h3>
+            <p>Web Development</p>
+            <a href="404.html">Learn more</a>
           </div>
-          <div class="recent-project-card">
-            <h3></h3>
-            <p></p>
-            <p>Learn more</p>
+        </article>
+        <article class="card">
+          <img
+            src="/project-assets/projects-section/3.jpg*"
+            alt="Image Project"
+            class="card-image"
+          />
+          <div class="card-content">
+            <h3 class="card_tittle">Vectorify</h3>
+            <p>User Experience Design</p>
+            <a href="404.html">Learn more</a>
           </div>
-        </div>
+        </article>
       </section>
       <section id="testimonial-section">
-        <h2>Hear What Our Clients Have to Say</h2>
-        <p>
-          “Circle helped us through every stage of our startup. We really
-          enjoyed working with you.”
-        </p>
-        <img
-          src="project-assets/testimonial-section/profile.png*"
-          alt="Testimonial profile"
-        />
-        <p>Kristin Watson</p>
-        <a href="https://www.booking.com/">Booking.com</a>
+        <div class="testimonial-group">
+          <h3>Hear What Our Clients Have to Say</h3>
+          <p>
+            “Circle helped us through every stage of our startup. We really
+            enjoyed working with you.”
+          </p>
+          <div class="testimonial-img">
+            <img
+              class="emoji-left-top"
+              src="project-assets/testimonial-section/memoji-1*.png"
+              alt="Emoji"
+            />
+            <img
+              class="emoji-right-top"
+              src="project-assets/testimonial-section/memoji-2*.png"
+              alt="Emoji"
+            />
+            <img
+              class="emoji-left-down"
+              src="project-assets/testimonial-section/memoji-3*.png"
+              alt="Emoji"
+            />
+            <img
+              class="emoji-right-down"
+              src="project-assets/testimonial-section/memoji-4*.png"
+              alt="Emoji"
+            />
+          </div>
+          <img
+            src="project-assets/testimonial-section/profile*.png*"
+            alt="Testimonial profile"
+          />
+
+          <p>Kristin Watson</p>
+          <a href="https://www.booking.com/">Booking.com</a>
+        </div>
       </section>
       <section id="services-section">
         <h2>Our Services</h2>
