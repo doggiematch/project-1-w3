@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <header id="back-to-top">
+    <header>
       <nav>
         <a href="../index.html">
-          <img src="../project-assets/logos/circle.svg" alt="Website Circle"
-        /></a>
+          <img src="../project-assets/logos/circle.svg" alt="Website Circle" />
+        </a>
+
+        <button class="btn-menu">Menu</button>
+
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="#others-projects">Projects</a></li>
+          <li><a href="../index.html#recent-projects">Projects</a></li>
           <li><a href="../index.html#services-section">Services</a></li>
         </ul>
-        <a href="../contact.html">Contact Us</a>
+
+        <a href="../contact.html" class="pseudo-button">Contact Us</a>
       </nav>
     </header>
     <main>
@@ -32,36 +36,91 @@
         <h2>Others Projects</h2>
         <div></div>
       </section>
+      <section id="recent-projects">
+        <h2>Recent Projects</h2>
+
+        <div class="items-card">
+          <article class="item-card">
+            <img
+              src="project-assets/projects-section/1.jpg"
+              alt="Image Project"
+              class="item-img"
+            />
+            <div class="card-content">
+              <h3 class="card_tittle">Simplify</h3>
+              <p>UI Design & App Development</p>
+              <a href="404.html">Learn more</a>
+            </div>
+          </article>
+
+          <article class="item-card">
+            <img
+              src="project-assets/projects-section/2.jpg"
+              alt="Image Project"
+              class="item-img"
+            />
+            <div class="card-content">
+              <h3 class="card_tittle">Dashcoin</h3>
+              <p>Web Development</p>
+              <a href="404.html">Learn more</a>
+            </div>
+          </article>
+
+          <article class="item-card">
+            <img
+              src="project-assets/projects-section/3.jpg"
+              alt="Image Project"
+              class="item-img"
+            />
+            <div class="card-content">
+              <h3 class="card_tittle">Vectorify</h3>
+              <p>User Experience Design</p>
+              <a href="404.html">Learn more</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
       <section id="newsletter-section">
-        <h2>Do you have any questions?</h2>
+        <h3>Do you have any questions?</h3>
         <p>Let us help you!</p>
         <form class="newsletter-email">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="Enter your email" />
-          <button type="submit">Subscribe</button>
+          <div class="newsletter-group">
+            <img
+              src="../project-assets/newsletter/icon/mail.svg"
+              alt="email icon"
+            />
+            <input id="email" type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </div>
         </form>
       </section>
     </main>
     <footer>
-      <section id="logo-address"></section>
-      <a href="https://circle91.webflow.io/">
-        <img src="../project-assets/logos/circle.svg" alt="Website Circle"
-      /></a>
-      <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-      <section id="navigation-links">
-        <nav>
-          <ul>
-            <li><a href="../404.html">Team</a></li>
-            <li><a href="../404.html">Services</a></li>
-            <li><a href="../404.html">About Us</a></li>
-            <li><a href="../404.html">Press</a></li>
-            <li><a href="#back-to-top">Projects</a></li>
-            <li><a href="../404.html">Privacy Policy</a></li>
-          </ul>
-        </nav>
+      <section class="footer-container">
+        <section class="side-left">
+          <a href="https://circle91.webflow.io/">
+            <img
+              src="../project-assets/logos/circle.svg"
+              alt="Website Circle"
+            />
+          </a>
+          <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </section>
+        <section class="side-right">
+          <nav>
+            <ul>
+              <li><a href="404.html">Team</a></li>
+              <li><a href="404.html">Services</a></li>
+              <li><a href="404.html">About Us</a></li>
+              <li><a href="404.html">Press</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="404.html">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </section>
       </section>
     </footer>
-    <!--<script src="../script.js"></script>-->
+    <!--<script src="script.js"></script>-->
   </body>
 </html>

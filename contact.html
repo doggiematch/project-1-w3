@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header id="back-to-top">
+    <header>
       <nav>
         <a href="index.html">
-          <img src="project-assets/logos/circle.svg" alt="Website Circle"
-        /></a>
+          <img src="project-assets/logos/circle.svg" alt="Website Circle" />
+        </a>
+
+        <button class="btn-menu">Menu</button>
+
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="projects/1.html">Projects</a></li>
+          <li><a href="index.html#recent-projects">Projects</a></li>
           <li><a href="index.html#services-section">Services</a></li>
         </ul>
-        <a href="../contact.html">Contact Us</a>
+
+        <a href="contact.html" class="pseudo-button">Contact Us</a>
       </nav>
     </header>
     <main>
@@ -55,22 +59,25 @@
       </section>
     </main>
     <footer>
-      <section id="logo-address"></section>
-      <a href="https://circle91.webflow.io/">
-        <img src="project-assets/logos/circle.svg" alt="Website Circle"
-      /></a>
-      <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-      <section id="navigation-links">
-        <nav>
-          <ul>
-            <li><a href="404.html">Team</a></li>
-            <li><a href="404.html">Services</a></li>
-            <li><a href="404.html">About Us</a></li>
-            <li><a href="404.html">Press</a></li>
-            <li><a href="projects/1.html">Projects</a></li>
-            <li><a href="404.html">Privacy Policy</a></li>
-          </ul>
-        </nav>
+      <section class="footer-container">
+        <section class="side-left">
+          <a href="https://circle91.webflow.io/">
+            <img src="project-assets/logos/circle.svg" alt="Website Circle" />
+          </a>
+          <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </section>
+        <section class="side-right">
+          <nav>
+            <ul>
+              <li><a href="404.html">Team</a></li>
+              <li><a href="404.html">Services</a></li>
+              <li><a href="404.html">About Us</a></li>
+              <li><a href="404.html">Press</a></li>
+              <li><a href="projects/1.html">Projects</a></li>
+              <li><a href="404.html">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </section>
       </section>
     </footer>
     <!--<script src="script.js"></script>-->

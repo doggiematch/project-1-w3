@@ -10,13 +10,17 @@
     <header>
       <nav>
         <a href="index.html">
-          <img src="project-assets/logos/circle.svg" alt="Website Circle"
-        /></a>
+          <img src="project-assets/logos/circle.svg" alt="Website Circle" />
+        </a>
+
+        <button class="btn-menu">Menu</button>
+
         <ul>
-          <li>Home</li>
+          <li><a href="#">Home</a></li>
           <li><a href="#recent-projects">Projects</a></li>
           <li><a href="#services-section">Services</a></li>
         </ul>
+
         <a href="contact.html" class="pseudo-button">Contact Us</a>
       </nav>
     </header>
@@ -32,19 +36,19 @@
           </div>
           <div class="hero-btn">
             <a class="pseudo-button" href="#newsletter-section">Get in touch</a>
-            <a href="#recent-projects">See our work</a>
+            <a class="link-txt" href="#recent-projects">See our work</a>
           </div>
         </div>
         <div class="hero-group-image">
           <img
-            class="card-image"
-            src="project-assets/hero-section/card-1.png"
-            alt="Card image"
-          />
-          <img
             class="hero-img"
             src="project-assets/hero-section/hero-image.png"
             alt="Hero image"
+          />
+          <img
+            class="card-image"
+            src="project-assets/hero-section/card-1.png"
+            alt="Card image"
           />
           <img
             class="project-accepted"
@@ -73,43 +77,48 @@
         /></a>
       </section>
       <section id="recent-projects">
-        <h3>Recent Projects</h3>
-        <article class="cards">
-          <img
-            src="/project-assets/projects-section/1.jpg*"
-            alt="Image Project"
-            class="card-image"
-          />
-          <div class="card-content">
-            <h3 class="card_tittle">Simplify</h3>
-            <p>UI Design & App Development</p>
-            <a href="projects/1.html">Learn more</a>
-          </div>
-        </article>
-        <article class="card">
-          <img
-            src="/project-assets/projects-section/2.jpg*"
-            alt="Image Project"
-            class="card-image"
-          />
-          <div class="card-content">
-            <h3 class="card_tittle">Dashcoin</h3>
-            <p>Web Development</p>
-            <a href="404.html">Learn more</a>
-          </div>
-        </article>
-        <article class="card">
-          <img
-            src="/project-assets/projects-section/3.jpg*"
-            alt="Image Project"
-            class="card-image"
-          />
-          <div class="card-content">
-            <h3 class="card_tittle">Vectorify</h3>
-            <p>User Experience Design</p>
-            <a href="404.html">Learn more</a>
-          </div>
-        </article>
+        <h2>Recent Projects</h2>
+
+        <div class="items-card">
+          <article class="item-card">
+            <img
+              src="project-assets/projects-section/1.jpg"
+              alt="Image Project"
+              class="item-img"
+            />
+            <div class="card-content">
+              <h3 class="card_tittle">Simplify</h3>
+              <p>UI Design & App Development</p>
+              <a href="404.html">Learn more</a>
+            </div>
+          </article>
+
+          <article class="item-card">
+            <img
+              src="project-assets/projects-section/2.jpg"
+              alt="Image Project"
+              class="item-img"
+            />
+            <div class="card-content">
+              <h3 class="card_tittle">Dashcoin</h3>
+              <p>Web Development</p>
+              <a href="404.html">Learn more</a>
+            </div>
+          </article>
+
+          <article class="item-card">
+            <img
+              src="project-assets/projects-section/3.jpg"
+              alt="Image Project"
+              class="item-img"
+            />
+            <div class="card-content">
+              <h3 class="card_tittle">Vectorify</h3>
+              <p>User Experience Design</p>
+              <a href="404.html">Learn more</a>
+            </div>
+          </article>
+        </div>
       </section>
       <section id="testimonial-section">
         <div class="testimonial-group">
@@ -121,103 +130,120 @@
           <div class="testimonial-img">
             <img
               class="emoji-left-top"
-              src="project-assets/testimonial-section/memoji-1*.png"
+              src="project-assets/testimonial-section/memoji-1.png"
               alt="Emoji"
             />
             <img
               class="emoji-right-top"
-              src="project-assets/testimonial-section/memoji-2*.png"
+              src="project-assets/testimonial-section/memoji-2.png"
               alt="Emoji"
             />
             <img
               class="emoji-left-down"
-              src="project-assets/testimonial-section/memoji-3*.png"
+              src="project-assets/testimonial-section/memoji-3.png"
               alt="Emoji"
             />
             <img
               class="emoji-right-down"
-              src="project-assets/testimonial-section/memoji-4*.png"
+              src="project-assets/testimonial-section/memoji-4.png"
               alt="Emoji"
             />
           </div>
-          <img
-            src="project-assets/testimonial-section/profile*.png*"
-            alt="Testimonial profile"
-          />
-
-          <p>Kristin Watson</p>
-          <a href="https://www.booking.com/">Booking.com</a>
+          <div class="testimonial-profile">
+            <img
+              src="project-assets/testimonial-section/profile.png"
+              alt="Testimonial profile"
+            />
+            <div class="testimonial-txt">
+              <p>Kristin Watson</p>
+              <a href="https://www.booking.com/">Booking.com</a>
+            </div>
+          </div>
         </div>
       </section>
       <section id="services-section">
         <h2>Our Services</h2>
         <div class="services-group">
           <div class="service-card">
-            <img
-              src="project-assets/services-section/icons/1.svg"
-              alt="User Interface Design icon"
-            />
+            <div class="service-img">
+              <img
+                src="project-assets/services-section/icons/1.svg"
+                alt="User Interface Design icon"
+              />
+            </div>
             <h3>User Interface Design</h3>
             <p>
               Circle provides you with a stunning user interface design that is
               accessible to everyone.
             </p>
-            <p>Learn more</p>
+            <a href="404.html">Learn more</a>
           </div>
 
           <div class="service-card">
-            <img
-              src="project-assets/services-section/icons/2.svg"
-              alt="User Experience Design icon"
-            />
+            <div class="service-img">
+              <img
+                src="project-assets/services-section/icons/2.svg"
+                alt="User Experience Design icon"
+              />
+            </div>
             <h3>User Experience Design</h3>
             <p>
               Circle always focuses on delivering the best user experience to
               your customers.
             </p>
-            <p>Learn more</p>
+            <a href="404.html">Learn more</a>
           </div>
           <div class="service-card">
-            <img
-              src="project-assets/services-section/icons/3.svg"
-              alt="Application Development icon"
-            />
+            <div class="service-img">
+              <img
+                src="project-assets/services-section/icons/3.svg"
+                alt="Application Development icon"
+              />
+            </div>
             <h3>Application Development</h3>
             <p>
               We develop high-quality mobile and web applications using the
               latest technology stack.
             </p>
-            <p>Learn more</p>
+            <a href="404.html">Learn more</a>
           </div>
         </div>
       </section>
       <section id="newsletter-section">
-        <h2>Do you have any questions?</h2>
+        <h3>Do you have any questions?</h3>
         <p>Let us help you!</p>
         <form class="newsletter-email">
-          <label for="email">Email</label>
-          <input id="email" type="email" placeholder="Enter your email" />
-          <button type="submit">Subscribe</button>
+          <div class="newsletter-group">
+            <img
+              src="project-assets/newsletter/icon/mail.svg"
+              alt="email icon"
+            />
+            <input id="email" type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </div>
         </form>
       </section>
     </main>
     <footer>
-      <section id="logo-address"></section>
-      <a href="https://circle91.webflow.io/">
-        <img src="project-assets/logos/circle.svg" alt="Website Circle"
-      /></a>
-      <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-      <section id="navigation-links">
-        <nav>
-          <ul>
-            <li><a href="404.html">Team</a></li>
-            <li><a href="404.html">Services</a></li>
-            <li><a href="404.html">About Us</a></li>
-            <li><a href="404.html">Press</a></li>
-            <li><a href="projects/1.html">Projects</a></li>
-            <li><a href="404.html">Privacy Policy</a></li>
-          </ul>
-        </nav>
+      <section class="footer-container">
+        <section class="side-left">
+          <a href="https://circle91.webflow.io/">
+            <img src="project-assets/logos/circle.svg" alt="Website Circle" />
+          </a>
+          <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
+        </section>
+        <section class="side-right">
+          <nav>
+            <ul>
+              <li><a href="404.html">Team</a></li>
+              <li><a href="404.html">Services</a></li>
+              <li><a href="404.html">About Us</a></li>
+              <li><a href="404.html">Press</a></li>
+              <li><a href="projects/1.html">Projects</a></li>
+              <li><a href="404.html">Privacy Policy</a></li>
+            </ul>
+          </nav>
+        </section>
       </section>
     </footer>
     <!--<script src="script.js"></script>-->
