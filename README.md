@@ -29,7 +29,7 @@
 
 ### Deployment
 
-- URL: _(pendiente de añadir)_
+- URL: `project-1-w3-jeannette.netlify.app`
 
 ## Technical Specifications
 
