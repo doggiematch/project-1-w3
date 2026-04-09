@@ -25,11 +25,11 @@
 
 ### API used
 
-- `https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects`
+- [Project API](https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects)
 
 ### Deployment
 
-- URL: `project-1-w3-jeannette.netlify.app`
+- [Deployed on Netlify](https://project-1-w3-jeannette.netlify.app)
 
 ## Technical Specifications
 
