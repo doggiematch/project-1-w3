@@ -112,6 +112,7 @@ nav ul li a:hover {
 
 .pseudo-button {
   background-color: var(--color-text-primary);
+  display: inline-block;
   padding: 0.75rem 1.5rem;
   color: var(--color-text-white);
   font-weight: 500;
@@ -151,7 +152,8 @@ nav ul li a:hover {
   display: none;
 }
 
-.hero-content h1 {
+.hero-content h1,
+#contact-container h1 {
   font-size: var(
     --space-normal
   ); /*en móvil 3rem es mucho, mejor definirlo directamente */
@@ -469,11 +471,6 @@ nav ul li a:hover {
   margin-bottom: var(--space-m);
 }
 
-.pseudo-button {
-  display: inline-block;
-  margin-top: var(--space-m);
-}
-
 .error-image {
   margin-top: var(--space-l);
   display: flex;
@@ -484,17 +481,64 @@ nav ul li a:hover {
   width: 800px;
 }
 
+/* SECCIÓN: FORMULARIO CONTACTO */
+
+input,
+textarea {
+  padding: var(--space-s);
+  border: none;
+  background-color: #e8e9eb;
+}
+
+#contact-container h1,
+.input-form-group,
+.button-form-group {
+  margin: 0 var(--space-s);
+}
+
+.grp-fullname,
+.grp-message,
+.button-form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: var(--space-s);
+}
+
+.grp-email-phone {
+  display: flex;
+  gap: var(--space-s);
+  padding: var(--space-s);
+}
+
+.grp-mail,
+.grp-phone {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.grp-mail input,
+.grp-phone input {
+  width: 100%;
+}
+
+.grp-message textarea::placeholder {
+  font-family: var(
+    --font-body
+  ); /*parece ser que hay que forzar al placeholder a heredar font family de body, sin embargo, los otros placeholder sí lo heredaron directamente*/
+}
+
+.button-form-group button {
+  cursor: pointer;
+}
+
 /* SECCIÓN: MEDIA QUERIES */
 
 @media (min-width: 768px) {
   .btn-menu {
     display: none;
-  }
-
-  nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 var(--space-m);
   }
 
   nav ul {
@@ -558,7 +602,10 @@ nav ul li a:hover {
   #testimonial-section,
   #newsletter-section,
   #logos,
-  footer {
+  #hero,
+  footer,
+  #contact-container,
+  nav {
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;

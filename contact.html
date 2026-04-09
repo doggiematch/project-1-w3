@@ -25,35 +25,48 @@
       </nav>
     </header>
     <main>
-      <section id="contact">
+      <section id="contact-container">
         <h1>Contact Us</h1>
         <form id="contact-form">
-          <div class="contact-form-group">
-            <label for="fullName">Full Name *</label>
-            <input
-              id="fullName"
-              type="text"
-              placeholder="Enter your full name"
-            />
-            <label for="email">Email</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Enter your email address"
-            />
-            <label for="phone">Phone</label>
-            <input
-              id="phone"
-              type="text"
-              placeholder="Enter your phone number"
-            />
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              placeholder="Write your message here ...."
-            ></textarea>
-
-            <button type="submit">Submit</button>
+          <div class="input-form-group">
+            <div class="grp-fullname">
+              <label for="fullName">Full Name *</label>
+              <input
+                id="fullName"
+                type="text"
+                placeholder="Enter your full name"
+              />
+            </div>
+            <div class="grp-email-phone">
+              <div class="grp-mail">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <div class="grp-phone">
+                <label for="phone">Phone</label>
+                <input
+                  id="phone"
+                  type="text"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+            </div>
+            <div class="grp-message">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Write your message here ...."
+              ></textarea>
+            </div>
+          </div>
+          <div class="button-form-group">
+            <button type="submit" class="pseudo-button">Submit</button>
           </div>
         </form>
       </section>
