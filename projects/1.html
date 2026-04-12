@@ -4,42 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Page</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <header>
       <nav>
-        <a href="../index.html">
-          <img src="../project-assets/logos/circle.svg" alt="Website Circle" />
+        <a href="index.html">
+          <img src="/project-assets/logos/circle.svg" alt="Website Circle" />
         </a>
 
         <button class="btn-menu">Menu</button>
 
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#other-projects">Projects</a></li>
-          <li><a href="../index.html#services-section">Services</a></li>
+        <ul id="nav-menu">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/index.html#recent-projects">Projects</a></li>
+          <li><a href="/index.html#services-section">Services</a></li>
         </ul>
 
-        <a href="../contact.html" class="pseudo-button">Contact Us</a>
+        <a href="/contact.html" class="pseudo-button">Contact Us</a>
       </nav>
     </header>
     <main>
-      <section id="hero_project">
-        <div class="hero-content_project">
-          <div class="hero-text_project">
+      <section id="hero-project">
+        <div class="hero-content-project">
+          <div class="hero-text-project">
             <h1 id="project-name"></h1>
 
-            <p id="project-description"></p>
-            <div class="update_completed">
-              <p>Completed on</p>
-              <p id="project-completed_on"></p>
+            <div class="project-row">
+              <p id="project-description"></p>
+
+              <div class="update-completed">
+                <p><strong>Completed on</strong></p>
+                <p id="project-completed_on"></p>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="hero-img-project">
           <img id="project-image" src="" alt="Cover project image" />
         </div>
+
         <p id="project-content"></p>
       </section>
       <section id="other-projects">
@@ -49,27 +54,27 @@
           <article class="item-card">
             <img src="" alt="Image Project" class="item-img" />
             <div class="card-content">
-              <h3 class="card_tittle"></h3>
+              <h3 class="card-tittle"></h3>
               <p></p>
-              <a href="404.html">Learn more</a>
+              <a href="/404.html">Learn more</a>
             </div>
           </article>
 
           <article class="item-card">
             <img src="" alt="Image Project" class="item-img" />
             <div class="card-content">
-              <h3 class="card_tittle"></h3>
+              <h3 class="card-tittle"></h3>
               <p></p>
-              <a href="404.html">Learn more</a>
+              <a href="/404.htmll">Learn more</a>
             </div>
           </article>
 
           <article class="item-card">
             <img src="" alt="Image Project" class="item-img" />
             <div class="card-content">
-              <h3 class="card_tittle"></h3>
+              <h3 class="card-tittle"></h3>
               <p></p>
-              <a href="404.html">Learn more</a>
+              <a href="/404.html">Learn more</a>
             </div>
           </article>
         </div>
@@ -81,7 +86,7 @@
         <form class="newsletter-email">
           <div class="newsletter-group">
             <img
-              src="../project-assets/newsletter/icon/mail.svg"
+              src="/project-assets/newsletter/icon/mail.svg"
               alt="email icon"
             />
             <input id="email" type="email" placeholder="Enter your email" />
@@ -94,27 +99,26 @@
       <section class="footer-container">
         <section class="side-left">
           <a href="https://circle91.webflow.io/">
-            <img
-              src="../project-assets/logos/circle.svg"
-              alt="Website Circle"
-            />
+            <img src="/project-assets/logos/circle.svg" alt="Website Circle" />
           </a>
           <p>2972 Westheimer Rd. Santa Ana,<br />Illinois 85486</p>
         </section>
         <section class="side-right">
           <nav>
             <ul>
-              <li><a href="404.html">Team</a></li>
-              <li><a href="404.html">Services</a></li>
-              <li><a href="404.html">About Us</a></li>
-              <li><a href="404.html">Press</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="404.html">Privacy Policy</a></li>
+              <li><a href="/404.html">Team</a></li>
+              <li><a href="/index.html#services-section">Services</a></li>
+              <li><a href="/404.html">About Us</a></li>
+              <li><a href="/404.html">Press</a></li>
+              <li><a href="/index.html#recent-projects">Projects</a></li>
+              <li><a href="/404.html">Privacy Policy</a></li>
             </ul>
           </nav>
         </section>
       </section>
     </footer>
-    <script src="../js/project.js"></script>
+    <script src="/js/project.js"></script>
+    <script src="/js/newsletter.js"></script>
+    <script src="menu-index.js"></script>
   </body>
 </html>
